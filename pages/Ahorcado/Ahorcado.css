@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Indie+Flower&family=Ubuntu&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh !important;
+}
+
+main {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+    & .juegoahorcadocontainer{
+        width: 90vw;
+        height: 75vh;
+        display: flex;
+        flex-direction: row;
+        gap: 3%;
+        padding: 3% 0 3% 0;
+
+        & .ahorcadofigure{
+            width: 70%;
+            height: 100%;
+            border: 1px solid black;
+            /* margin: 3% 0 3% 0; */
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            padding: 1% 0 1% 0;
+        
+                    & #dibujoahorcado{
+                        height: 90%; 
+                        object-fit: contain;
+                    }
+                }
+        
+        & .inputcontainer{
+            width: 27%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+
+            & .inputgroup{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap:  20px;
+
+                & #letra{
+                    width: 100%;
+                    height: 35px;
+                    min-height: 30px;
+                    border: 2px solid black;
+                    border-radius: 15px;
+                    animation: rebota 1.5s alternate infinite ease-in;
+                    transition: all 1.5s ease-in-out;
+                }
+
+                & #buttonsubmit{
+                    width: 75%;
+                    height: 22px;
+                    background-color:forestgreen;
+                    border: 1px solid black;
+                    color: white;
+                }
+            }
+
+            & .inputgroup2{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                & #resultado{
+                    font-size: 35px;
+                    margin: 10% 0 10% 0;
+                    font-family: "Indie Flower";
+                } 
+
+                @media screen and (min-width: 740px) and (max-width: 1250px) {
+                    #resultado {
+                        font-size: 22px;
+                    }
+                }
+
+                & #numerofallos{
+                    width: 100%;
+                    height: 30px;
+                    border: 1px solid black;
+                    color: black;
+                }
+
+                & #palabrasfallos{
+                    width: 100%;
+                    height: 50px;
+                    border: 3px dotted red;
+                    margin: 5px 0 30px 0;
+                    color: black;
+                }
+
+                & #logohangmanpage {
+                    width: 100%;
+                    /* margin: 10% 0 0 0; */
+
+                    & #titlehangmanimg{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 750px) {
+        main {
+            width: 100vw;
+            min-height: 100vh;
+            padding: 15vh 0 10vh 0;
+
+        .juegoahorcadocontainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90vw;
+            height: 100%;
+
+            & .ahorcadofigure{
+                width: 75%;
+                border: none;
+                /* margin: 3% 0 3% 0; */
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+                padding: 1% 0 1% 0;
+            
+                        & #dibujoahorcado{
+                            width: 100%; 
+                            object-fit: contain;
+                        }
+                    }
+            
+            & .inputcontainer{
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                align-items: center;
+
+                .inputgroup{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                }
+                .inputgroup2{
+                    width: 50%;
+
+                    & #resultado{
+                        font-size: 15px;
+                    }
+
+                    & #numerofallos{
+                        height: 40px;
+                    }
+
+                    & #logohangmanpage{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

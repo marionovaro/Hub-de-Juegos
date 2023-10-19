@@ -1,0 +1,44 @@
+#galleryPokemon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* border: 1px solid black; */
+  }
+  
+  #containerFilter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 1rem 0;
+  }
+  
+  #inputPokemon {
+    width: 90%;
+    max-width: 500px;
+    height: 2rem;
+    border-radius: 29px;
+    padding: 10px;
+  }
+  
+  #spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #paginacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 2rem 0;
+    gap: 0.5rem;
+    & button {
+      width: 40px;
+      height: 30px;
+      border-radius: 10px;
+      background-color: #fde171;
+    }
+  }

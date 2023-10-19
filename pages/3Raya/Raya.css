@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Indie+Flower&family=Nabla&family=Noto+Color+Emoji&family=Pixelify+Sans:wght@600&family=Ubuntu&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color: black;
+
+    #rayacontainer {
+        display: flex;
+        flex-direction: column;
+        gap: 3%;
+        margin: 5% 0 0 0;
+        align-items: center;
+
+        /* #titulo3raya{ */
+
+        /* } */
+
+        #resultadoraya{
+            color: black;
+        }
+
+        #tablero{
+            width: 340.5px;
+            height: 340.5px;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+        @media screen and (min-width: 750px) and (min-height: 800px) and (max-width: 1250px) {
+            #tablero{
+                min-width: 400px;
+                min-height: 400px;
+                }
+            }
+
+            .casillas3raya{
+                width: 33.33%;
+                height: 33.33%;
+                border: 1px solid black;
+                color: black;
+                font-size: 65px;
+                font-family: "Noto Color Emoji";
+            }
+        }
+
+        #reloadraya{
+            width: 100px;
+            height: 20px;
+            margin: 8px 0 0 0;
+            border-radius: 5px;
+        }
+    }   
+};
+
+
+
+
+
+
+
+
+
+
+
+
