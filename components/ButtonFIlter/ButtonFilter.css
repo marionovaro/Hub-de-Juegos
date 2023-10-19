@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Indie+Flower&family=Ubuntu&display=swap');
+
+
+#filterButton {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 90vw;
+  margin: 2rem 0 2rem 0;
+  border: 2px dotted black;
+  border-radius: 20px;
+  padding: 1rem 0 1rem 0;
+}
+
+.buttonFilter {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5px;
+  font-size: 125%;
+  font-family: "Indie Flower";
+  text-transform: uppercase;
+}
